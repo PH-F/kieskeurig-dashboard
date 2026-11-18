@@ -1,0 +1,56 @@
+.kd-wrap .kd-filter {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 16px 0 24px;
+}
+
+.kd-wrap .kd-filter label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.kd-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.kd-chart-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.kd-chart-box h2 {
+    margin-top: 0;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.kd-table {
+    margin-bottom: 16px;
+}
+
+.kd-status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.kd-status--approved  { background: #d1fae5; color: #065f46; }
+.kd-status--pending   { background: #fef3c7; color: #92400e; }
+.kd-status--rejected  { background: #fee2e2; color: #991b1b; }
+
+.kd-pagination {
+    margin-top: 12px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
