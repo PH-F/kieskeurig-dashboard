@@ -1,0 +1,10 @@
+/test.txt
+
+
+
+curl -s -G -o /tmp/reshift.json -w "HTTP %{http_code}\n" \
+  "https://productapiext.reshift.nl/v1/Products" \
+  -H "Authorization: wl_3dtvmagazine_5d8e885f043b2664cc7385a3324d1007a8f19f3a950705be" \
+  -H "Accept: application/json" \
+  --data-urlencode "Query=Philips OLED801" \
+  --data-urlencode "Limit=5"; head -c 500 /tmp/reshift.json; echo
